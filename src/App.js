@@ -1,5 +1,6 @@
 import Card from './components/Card';
 import './App.css';
+import Interval from './components/interval';
 
 function App() {
   return (
@@ -15,6 +16,15 @@ function App() {
         <p>Olá tudo bem</p>
       </Card>
 
+      <Card title="Dica do Dia" color="purple">
+        <p>Olá tudo bem</p>
+      </Card>
+
+      <Card title="Dica do Dia" color="blue">
+        <p>Olá tudo bem</p>
+      </Card>
+
+      <Interval></Interval>
     </div>
   );
 }
