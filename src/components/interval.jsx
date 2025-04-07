@@ -1,19 +1,11 @@
 import React from "react";
 import Card from "./Card";
-export default function Interval(props) {
+
+export default function Interval({ min, max }) {
     return (
         <Card title="Intervalo de números">
-            <div className="interval-container">
-                <div className="input-group">
-                    <label>Máximo</label>
-                    <input type="number" value={0} />
-                </div>
-
-                <div className="input-group">
-                    <label>Mínimo</label>
-                    <input type="number" value={0} />
-                </div>
-            </div>
+            <p>Mínimo: <strong>{min}</strong></p>
+            <p>Máximo: <strong>{max}</strong></p>
         </Card>
     );
 }
