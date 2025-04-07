@@ -1,13 +1,15 @@
 import Card from './components/Card';
 import './App.css';
 import Interval from './components/interval';
-
+import Media from './components/Media'
 function App() {
   return (
     <div className="App">
 
       <h1>-- Exercicio React-Redux --</h1>
 
+
+      <Media></Media>
       <Card title="Aviso Importante" color="red">
         <p>Este é um card com tema vermelho.</p>
       </Card>
