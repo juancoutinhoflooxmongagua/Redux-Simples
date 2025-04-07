@@ -1,0 +1,23 @@
+.card {
+    border: 1px solid #ccc;
+    border-top-width: 8px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  
+  .card-header {
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .card-content {
+    padding: 16px;
+    color: #333;
+  }
+  
