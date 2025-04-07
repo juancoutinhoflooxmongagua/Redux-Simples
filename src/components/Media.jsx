@@ -1,9 +1,10 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Card from "./Card";
 
 export default function Interval() {
-    const min = 1;
-    const max = 10;
+    const min = useSelector(state => state.numbers.min);
+    const max = useSelector(state => state.numbers.max);
     const media = (min + max) / 2;
 
     return (
