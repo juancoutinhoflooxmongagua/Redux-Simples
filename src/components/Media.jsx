@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "./Card";
 
 export default function Interval() {
-    const [min, setMin] = useState(0);
-    const [max, setMax] = useState(0);
-
+    const min = 1;
+    const max = 10;
     const media = (min + max) / 2;
 
     return (
@@ -12,20 +11,12 @@ export default function Interval() {
             <div className="interval-container">
                 <div className="input-group">
                     <label>Máximo</label>
-                    <input
-                        type="number"
-                        value={max}
-                        onChange={e => setMax(Number(e.target.value))}
-                    />
+                    <input type="number" value={max} readOnly />
                 </div>
 
                 <div className="input-group">
                     <label>Mínimo</label>
-                    <input
-                        type="number"
-                        value={min}
-                        onChange={e => setMin(Number(e.target.value))}
-                    />
+                    <input type="number" value={min} readOnly />
                 </div>
             </div>
 
